@@ -21,7 +21,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 90vh;
     margin: 0;
 }
 
@@ -63,7 +63,7 @@ h5, p {
 
 .header-con {
     letter-spacing: 8px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 50px;
 }
@@ -81,7 +81,7 @@ main {
 /* left section */
 .left-sec {
     margin-right: 6%;
-    padding-left: 1%;
+    padding-left: 2%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -153,7 +153,7 @@ button:hover, #reset:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 450px;
+    width: 480px;
     height: 320px;
     padding: 5%;
     background-color: var(--VeryDarkCyan);
@@ -180,8 +180,9 @@ button:hover, #reset:hover {
     margin-bottom: 7%;
 }
 
-.right-sec-col h5 {
+.right-sec-col .h5 {
     color: var(--Lightgrayishcyan);
+    font-size: 14px;
 }
 
 .right-sec-col p {

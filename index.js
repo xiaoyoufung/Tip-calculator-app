@@ -33,12 +33,9 @@ function changeTotal() {
             showTotal.textContent = "$" + ((totalAmount + calTipAmount)/pplAmt).toFixed(2);
         }
     }
-
 }
 
 tipBtn.addEventListener("click", e => {
-    // alert(e.target.nodeName);
-    
     
     if(e.target.nodeName === "BUTTON"){
         tipAmount = (parseInt(e.target.textContent))/100;
@@ -67,38 +64,13 @@ custTip.addEventListener("blur", e => {
     }
 })
 
-// function checkEmpt(elementName) {
-//     elementName.addEventListener("blur", e => {
-//         if(elementName.value <= 0 ) {
-//             showEror.style.display = "inline";
-//             elementName.style.outline = "2.5px solid var(--orangered)";
-//         } else {
-//             changeTotal();
-//             showEror.style.display = "none";
-//             elementName.style.outline = "2.5px solid var(--Strongcyan)";
-    
-//             // display reset button
-//             resetBtn.style.opacity = "1";
-//             resetBtn.classList.remove("noHover");
-//             resetBtn.addEventListener("click", e => {
-//                 window.location.reload();
-//             })
-//         }
-//     })
-// }
-
-// checkEmpt(ppl);
-// checkEmpt(totalInt);
 
 ppl.addEventListener("blur", e => {
     pplAmt = parseFloat(ppl.value);
-    //alert((pplAmt))
 
     if(pplAmt > 0 ) {
-
         showEror.style.display = "none";
         ppl.style.outline = "none";
-        //alert(totalInt.value)
 
         if(totalInt.value == "") {
            return
@@ -127,5 +99,3 @@ ppl.addEventListener("blur", e => {
 ppl.addEventListener("focus", e => {
     ppl.style.outline = "2.5px solid var(--Strongcyan)";
 })
-
-
